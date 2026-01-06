@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+#map {
+  position: sticky;
+  top: 0;
+  width: 60%;
+  height: 100vh;
+}
+
+#story {
+  width: 40%;
+  padding: 30px;
+  background: white;
+}
+
+section {
+  margin-bottom: 80vh;
+}

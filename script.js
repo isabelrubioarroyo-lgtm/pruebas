@@ -1,0 +1,35 @@
+mapboxgl.accessToken = 'PEGA_AQUI_TU_TOKEN';
+
+const map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/isabelrubioa/cmjtvw0vy00d701qydr6oa8pz',
+  center: [-98, 39],
+  zoom: 3
+});
+
+const chapters = {
+  overview: {
+    center: [-98, 39],
+    zoom: 3
+  },
+  california: {
+    center: [-119.5, 36.7],
+    zoom: 5
+  },
+  east: {
+    center: [-74, 40.7],
+    zoom: 6
+  }
+};
+
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top < window.innerHeight / 2 && rect.bottom > 0) {
+      const step = section.dataset.step;
+      map.flyTo(chapters[step]);
+    }
+  });
+});

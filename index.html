@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Muertes por sobredosis en EE. UU.</title>
 
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Mapbox GL CSS -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
+    rel="stylesheet"
+  />
+
+  <!-- Tu CSS (con cache-busting) -->
+  <link rel="stylesheet" href="./style.css?v=2" />
 </head>
 
 <body>
 
-<div id="map"></div>
+  <!-- Contenedor del mapa -->
+  <div id="map"></div>
 
-<div id="story">
-  <section data-step="overview">
-    <h2>Una crisis nacional</h2>
-    <p>Las muertes por sobredosis afectan a todo Estados Unidos.</p>
-  </section>
+  <!-- Story -->
+  <div id="story">
+    <section data-step="overview">
+      <h2>Una crisis nacional</h2>
+      <p>Las muertes por sobredosis afectan a todo Estados Unidos.</p>
+    </section>
 
-  <section data-step="california">
-    <h2>California</h2>
-    <p>California concentra una gran cantidad de casos.</p>
-  </section>
+    <section data-step="california">
+      <h2>California</h2>
+      <p>California concentra una gran cantidad de casos.</p>
+    </section>
 
-  <section data-step="east">
-    <h2>Costa Este</h2>
-    <p>La Costa Este muestra una alta concentración en grandes ciudades.</p>
-  </section>
-</div>
+    <section data-step="east">
+      <h2>Costa Este</h2>
+      <p>La Costa Este muestra una alta concentración en grandes ciudades.</p>
+    </section>
+  </div>
 
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-<script src="script.js"></script>
+  <!-- Mapbox GL JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+
+  <!-- Tu JS (con cache-busting) -->
+  <script src="./script.js?v=2"></script>
 
 </body>
 </html>

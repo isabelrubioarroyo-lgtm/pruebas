@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'PEGA_AQUI_TU_TOKEN';
+mapboxgl.accessToken = 'pk.eyJ1IjoiaXNhYmVscnViaW9hIiwiYSI6ImNtanNzZ2h2OTJmMWszZHNkYWN6dzczMmUifQ.b5XfE8S-qEIoFG6FNPifvQ';
 
 const map = new mapboxgl.Map({
   container: 'map',
